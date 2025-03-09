@@ -6,5 +6,11 @@ export let eggs = #{
     hypr: #{
         targets: "~/.config/hypr",
 	templates: ["hyprland.conf", "**/*.conf"],
+	enabled: false,
     },
+    sway: #{
+        targets: "~/.config/sway",
+	templates: ["config"],
+	enabled: true,
+    }
 };
