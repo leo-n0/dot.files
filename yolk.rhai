@@ -13,7 +13,7 @@ export let eggs = #{
 	templates: ["config"],
 	enabled: true,
     },
-    yum_repos: #{
+   yum_repos: #{
         targets: "/etc/yum.repos.d/",
 	strategy: "merge",
     }
