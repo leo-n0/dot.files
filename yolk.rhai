@@ -12,5 +12,9 @@ export let eggs = #{
         targets: "~/.config/sway",
 	templates: ["config"],
 	enabled: true,
+    },
+    yum_repos: #{
+        targets: "/etc/yum.repos.d/",
+	strategy: "merge",
     }
 };
