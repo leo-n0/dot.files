@@ -18,6 +18,11 @@ export let eggs = #{
 	templates: ["config.kdl"],
         enabled: true,
     },
+    niri_autostart: #{
+        targets: "~/.config",
+	strategy: "merge",
+	enabled: true,
+    },
     yum_repos: #{
         targets: "/etc/yum.repos.d/",
 	strategy: "merge",
