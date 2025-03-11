@@ -13,8 +13,14 @@ export let eggs = #{
 	templates: ["config"],
 	enabled: true,
     },
-   yum_repos: #{
+    niri: #{
+        targets: "~/.config/niri",
+	templates: ["config.kdl"],
+        enabled: true,
+    },
+    yum_repos: #{
         targets: "/etc/yum.repos.d/",
 	strategy: "merge",
+	enabled: true,
     }
 };
