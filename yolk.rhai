@@ -5,7 +5,9 @@ export let data = #{
 
 export let eggs = #{
     sddm: #{
-        targets: "/usr/share/sddm/themes/zen",
+        targets: #{
+	    "theme": "/usr/share/sddm/themes/zen",
+	},
         templates: ["theme.conf"],
 	enabled: true,
     },
