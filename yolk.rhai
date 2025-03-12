@@ -4,7 +4,12 @@ export let data = #{
 };
 
 export let eggs = #{
-   hypr: #{
+    sddm: #{
+        targets: "/usr/share/sddm/themes/zen",
+        templates: ["theme.conf"],
+	enabled: true,
+    },
+    hypr: #{
         targets: "~/.config/hypr",
 	templates: ["hyprland.conf", "**/*.conf"],
 	enabled: false,
