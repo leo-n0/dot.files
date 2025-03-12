@@ -1,2 +1,0 @@
-# Change keyboard layout (needed for correct keyboard in sddm)
-localectl set-keymap de

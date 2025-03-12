@@ -2,8 +2,9 @@ export let data = #{
     for_vcs: LOCAL,
     cool_setting: if SYSTEM.hostname == "foo" { 10 } else { 25 }
 };
+
 export let eggs = #{
-    hypr: #{
+   hypr: #{
         targets: "~/.config/hypr",
 	templates: ["hyprland.conf", "**/*.conf"],
 	enabled: false,
@@ -11,7 +12,7 @@ export let eggs = #{
     sway: #{
         targets: "~/.config/sway",
 	templates: ["config"],
-	enabled: true,
+	enabled: false,
     },
     niri: #{
         targets: "~/.config/niri",
