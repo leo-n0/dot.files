@@ -1,0 +1,8 @@
+[Unit]
+PartOf=graphical-session.target
+After=graphical-session.target niri.service
+Requisite=graphical-session.target
+
+[Service]
+ExecStart=/home/leo/Downloads/sww/target/release/swww-daemon
+Restart=on-failure
