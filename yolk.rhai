@@ -6,10 +6,10 @@ export let data = #{
 export let eggs = #{
     sddm: #{
         targets: #{
-	    "theme": "/usr/share/sddm/themes/zen",
+	    "theme": "/usr/share/sddm/themes/sddm-astronaut-theme",
 	},
-        templates: ["theme.conf"],
-	enabled: true,
+        templates: ["metadata.desktop"],
+	enabled: false,
     },
     hypr: #{
         targets: "~/.config/hypr",
