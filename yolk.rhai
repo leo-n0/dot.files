@@ -26,9 +26,8 @@ export let eggs = #{
 	templates: ["config.kdl"],
         enabled: true,
     },
-    niri_autostart: #{
-        targets: "~/.config",
-	strategy: "merge",
+    systemd: #{
+        targets: "~/.config/systemd",
 	enabled: true,
     },
     yum_repos: #{
