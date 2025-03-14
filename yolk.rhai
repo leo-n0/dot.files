@@ -34,9 +34,9 @@ export let eggs = #{
         targets: "/etc/yum.repos.d/",
 	strategy: "merge",
 	enabled: true,
+    },
+    nvim: #{
+        targets: "~/.config/nvim",
+	enabled: true,
     }
-//    nvim: #{
-//        targets: "~/.config/nvim",
-//	enabled: false,
-//    }
 };
