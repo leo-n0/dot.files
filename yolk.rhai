@@ -38,5 +38,9 @@ export let eggs = #{
     nvim: #{
         targets: "~/.config/nvim",
 	enabled: true,
+    },
+    dunst: #{
+        targets: "~/.config/dunst",
+	enabled: true,
     }
 };
