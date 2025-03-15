@@ -2,4 +2,14 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+return {
+  {
+    'norcalli/nvim-colorizer.lua',
+    priority = 1000,
+    lazy = false,
+    dependencies = { 'folke/tokyonight.nvim' },
+    config = function()
+      require('colorizer').setup()
+    end,
+  },
+}
