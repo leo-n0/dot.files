@@ -14,7 +14,7 @@ export let eggs = #{
     hypr: #{
         targets: "~/.config/hypr",
 	templates: ["hyprland.conf", "**/*.conf"],
-	enabled: false,
+	enabled: true,
     },
     sway: #{
         targets: "~/.config/sway",
@@ -35,12 +35,21 @@ export let eggs = #{
 	strategy: "merge",
 	enabled: true,
     },
+    starship: #{
+        targets: "~/.config",
+	strategy: "merge",
+	enabled: true,
+    },
     nvim: #{
         targets: "~/.config/nvim",
 	enabled: true,
     },
     dunst: #{
         targets: "~/.config/dunst",
+	enabled: true,
+    },
+    zathura: #{
+        targets: "~/.config/zathura",
 	enabled: true,
     }
 };
