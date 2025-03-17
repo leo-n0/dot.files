@@ -56,7 +56,7 @@ output "eDP-1" {
     transform "normal"
     position x=0 y=0
     variable-refresh-rate on-demand=true
-    background-color "#ffffff"
+    background-color "#74c7ec"
 }
 
 layout {
@@ -83,10 +83,8 @@ layout {
         // off
         width 3
 
-        // active-color "#ffc87f"
         inactive-color "#505050"
-        active-gradient from="#ffbb66" to="#befc03" angle=45 relative-to="workspace-view"
-        // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
+        active-gradient from="#f5c2e7" to="#cba6f7" angle=45 relative-to="workspace-view"
     }
 
     shadow {
@@ -94,8 +92,8 @@ layout {
         softness 4
         spread 0
         offset x=5 y=5
-        color "#3234a8bb"
-	inactive-color "#3234a877"
+        color "#181825bf"
+	inactive-color "#11111bbf"
     }
 
     insert-hint {
