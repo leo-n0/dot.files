@@ -40,6 +40,10 @@ export let eggs = #{
 	strategy: "merge",
 	enabled: true,
     },
+    fastfetch: #{
+        targets: "~/.config/fastfetch",
+	enabled: true,
+    },
     nvim: #{
         targets: "~/.config/nvim",
 	enabled: true,

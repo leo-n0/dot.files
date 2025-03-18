@@ -83,8 +83,8 @@ layout {
         // off
         width 3
 
-        inactive-color "#505050"
-        active-gradient from="#f5c2e7" to="#cba6f7" angle=45 relative-to="workspace-view"
+        inactive-color "#374145"
+        active-gradient from="#a7c080" to="#83c092" angle=45 relative-to="workspace-view"
     }
 
     shadow {

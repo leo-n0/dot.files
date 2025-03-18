@@ -888,14 +888,16 @@ require('lazy').setup({
     -- change the command in the config to whatever the name of that colorscheme is.
     --
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-    'catppuccin/nvim',
-    name = 'catppuccin',
+    'neanias/everforest-nvim',
+    version = false,
+    lazy = false,
     priority = 1000, -- Make sure to load this before all the other start plugins.
-    -- Load the colorscheme here.
-    -- Like many other themes, this one has different styles, and you could load
     config = function()
-      vim.cmd.colorscheme 'catppuccin'
-    end
+      require('everforest').setup {
+        -- Your config here
+      }
+      vim.cmd.colorscheme 'everforest'
+    end,
   },
 
   -- Highlight todo, notes, etc in comments
