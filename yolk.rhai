@@ -35,6 +35,10 @@ export let eggs = #{
 	strategy: "merge",
 	enabled: true,
     },
+    kitty: #{
+        targets: "~/.config/kitty",
+	enabled: true,
+    },
     starship: #{
         targets: "~/.config",
 	strategy: "merge",
