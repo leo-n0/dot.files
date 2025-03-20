@@ -1,6 +1,4 @@
 
-spawn-at-startup "~/Downloads/xwayland-satellite-0.5.1/target/debug/xwayland-satellite" ":12"
-// spawn-at-startup "swww-daemon"
 
 prefer-no-csd
 
