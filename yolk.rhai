@@ -4,22 +4,10 @@ export let data = #{
 };
 
 export let eggs = #{
-    sddm: #{
-        targets: #{
-	    "theme": "/usr/share/sddm/themes/sddm-astronaut-theme",
-	},
-        templates: ["metadata.desktop"],
-	enabled: false,
-    },
     hypr: #{
         targets: "~/.config/hypr",
-	templates: ["hyprland.conf", "**/*.conf"],
+	templates: ["hyprlock.conf"],
 	enabled: true,
-    },
-    sway: #{
-        targets: "~/.config/sway",
-	templates: ["config"],
-	enabled: false,
     },
     niri: #{
         targets: "~/.config/niri",
@@ -33,6 +21,10 @@ export let eggs = #{
     yum_repos: #{
         targets: "/etc/yum.repos.d/",
 	strategy: "merge",
+	enabled: true,
+    },
+    gtk4: #{
+        targets: "~/.config/gtk-4.0",
 	enabled: true,
     },
     kitty: #{
