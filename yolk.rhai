@@ -23,10 +23,6 @@ export let eggs = #{
 	strategy: "merge",
 	enabled: true,
     },
-    gtk4: #{
-        targets: "~/.config/gtk-4.0",
-	enabled: true,
-    },
     kitty: #{
         targets: "~/.config/kitty",
 	enabled: true,
