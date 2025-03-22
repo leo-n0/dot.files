@@ -67,6 +67,16 @@ output "DP-1" {
     background-color "#000000"
 }
 
+output "HDMI-A-1" {
+    // off
+    mode "1920x1080@74.973"
+    scale 1
+    transform "normal"
+    position x=0 y=0
+    variable-refresh-rate on-demand=true
+    background-color "#000000"
+}
+
 layout {
     gaps 5
     center-focused-column "never"
@@ -136,6 +146,13 @@ window-rule {
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
+}
+
+window-rule { 
+    match app-id=r#"pavucontrol$"# 
+    open-floating true 
+    // default-column-width { proportion 0.45; }
+    // default-window-height { proportion 0.40; }
 }
 
 // Example: block out two password managers from screen capture.
